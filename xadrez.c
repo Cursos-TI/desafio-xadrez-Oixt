@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+
 int main(){
    //variaveis
  int torre, rainha = 1, bispo = 1; //para o uso do while e do-while foi nescessario acrescentar o valor 1
