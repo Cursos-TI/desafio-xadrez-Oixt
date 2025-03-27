@@ -2,7 +2,7 @@
 int main(){
    //variaveis
  int torre, rainha = 1, bispo = 1; //para o uso do while e do-while foi nescessario acrescentar o valor 1
- int menucav, cavalo, cavcima = 1;
+ int menucav, cavalo;
 //movimentacao da torre
 printf("Torre:");
  for (torre = 0; torre <= 4; torre++)
@@ -32,7 +32,8 @@ printf("\n\nBispo:");
 
 
  //movimento cavalo
- int cavesq = 1;
+ int cavesq = 1, cavcima = 1;//variantes do-while
+
 printf("\n\nVamos movimentar o Cavalo.\n");
 printf("Vamos Fazer um ataque para Cima. Escolha Direita para encurralar o Rei,\n ou, Esquerda para eliminar a Rainha.\n\n");
 printf("1.Direita\n");
