@@ -47,7 +47,7 @@ case 1:// exemplo com For.
    {
       for (int cavdir = 1; cavdir <= 2; cavdir++)
       {
-         printf("Cima \n");
+         printf("Cima. \n");
       }
       printf("Direita.\n");
       printf("Rei encurralado.\n");
