@@ -1,10 +1,8 @@
 #include <stdio.h>
-
-
 int main(){
    //variaveis
  int torre, rainha = 1, bispo = 1; //para o uso do while e do-while foi nescessario acrescentar o valor 1
- 
+ int menucav, cavalo, cavcima = 1;
 //movimentacao da torre
 printf("Torre:");
  for (torre = 0; torre <= 4; torre++)
@@ -32,5 +30,47 @@ printf("\n\nBispo:");
  } while (rainha <= 9);
  
 
+
+ //movimento cavalo
+ int cavesq = 1;
+printf("\n\nVamos movimentar o Cavalo.\n");
+printf("Vamos Fazer um ataque para Cima. Escolha Direita para encurralar o Rei,\n ou, Esquerda para eliminar a Rainha.\n\n");
+printf("1.Direita\n");
+printf("2.Esquerda\n");
+
+scanf("%d", &menucav);
+switch (menucav) // como sao dois tipos de loops aninhados, trouxe aqui o loop com for e com do-while
+{
+case 1:// exemplo com For.
+   for ( cavalo = 1; cavalo < 2; cavalo++)
+   {
+      for (int cavdir = 1; cavdir <= 2; cavdir++)
+      {
+         printf("Cima \n");
+      }
+      printf("Direita.\n");
+      printf("Rei encurralado.\n");
+   }
+   
+   break;
+case 2:// exemplo com do-while
+   do
+   {
+      do
+      {
+         printf("Cima.\n");
+         cavcima++;
+      } while (cavcima <= 2);
+      printf("Esquerda.\n");
+      printf("Cavalo eliminou a Rainha.\n\n");
+      cavesq++;
+   } while (cavesq < 1);
+   
+break;
+
+default: //caso a escolha solicitada seja incorreta
+   printf("Escolha Incorreta!\n\n.");
+   break;
+}
     return 0; 
 }
